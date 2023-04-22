@@ -1,15 +1,140 @@
-body {
-  font-family: 'Montserrat';
-  background-color: $back;
-  color: $text;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image {
-  width: 500px;
-  height: 300px;
-  background-size: contain;
-  background-position: center;
+body {
+  font-family: 'TT Lakes';
+  background-color: $main-bgc-color;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  min-width: 1120px;
+  z-index: 1;
+  background-color: $main-bgc-color;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px 0 30px;
+    position: relative;
+
+    &--title {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 800;
+    }
+
+    &--title::before {
+      display: block;
+      position: absolute;
+      left: 0px;
+      bottom: 20px;
+      content: "";
+      width: 3px;
+      height: 40px;
+      background-color: #41F6D7;
+      border-radius: 5px;
+    }
+
+    &-btns {
+      display: flex;
+      gap: 32px;
+
+      &--desc {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      &--wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    &-btn {
+      padding-top: 5px;
+    }
+  }
+}
+
+.service {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 34px;
+    gap: 10px;
+
+    &--item {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      padding: 8px 21px 7px 22px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+
+      &--link {
+        text-decoration: none;
+        color: $title-color;
+      }
+
+      &:hover {
+        background-color: $white-color;
+        border: 2px solid $content-color;
+      }
+
+    }
+  }
+}
+
+
+.features {
+  background-image: url('../img/main_company-title-large.png');
   background-repeat: no-repeat;
-  background-image: url('../img/methed.jpg');
+  background-position: right 48px;
+  background-size: 531px 307px;
+  min-height: 403px;
+  margin-right: 29px;
+
+  &-text {
+    max-width: 580px;
+    padding-left: 34px;
+
+    &__title {
+      padding-top: 14px;
+      padding-left: 15px;
+      color: $title-color;
+    }
+
+    &__desc {
+      padding-top: 19px;
+    }
+
+    &__wrap {
+      padding-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &--btn {
+        border: none;
+        background-color: $main-bgc-color;
+        padding-top: 4px;
+
+        &-text {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
