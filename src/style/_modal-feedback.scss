@@ -1,0 +1,121 @@
+.modal-feedback {
+  background-color: rgba($color: $white-color, $alpha: 0.9);
+  position: absolute;
+  z-index: 3;
+  width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+
+  &__active {
+    display: none;
+  }
+
+  &__close-btn {
+    margin-top: 32px;
+  }
+
+  &__close-btn--form {
+    display: none;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 33px;
+
+    &-form {
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      background-color: $white-color;
+      height: 100vh;
+      padding: 40px 32px 0px 32px;
+      gap: 16px;
+
+      &--title {
+        padding-bottom: 12px;
+      }
+
+      &--input {
+        border: 1px solid $line-color;
+        border-radius: 8px;
+        padding: 12px 0px 12px 16px;
+      }
+
+      &--input::placeholder {
+        color: #B5B6BC;
+      }
+
+      &--text {
+        color: $title-color;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+
+        &--color-change {
+          color: $main-color;
+        }
+      }
+
+      &--button {
+        align-self: flex-end;
+        border-radius: 50px;
+        border: 1px solid $main-color;
+        background-color: $main-color;
+        margin-top: 11px;
+        padding: 4px 20px 4px 20px;
+        color: $white-color;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1437px) {
+  .modal-feedback {
+    width: 1024px;
+  }
+}
+
+@media (max-width: 1022px) {
+  .modal-feedback {
+    width: 768px;
+
+    &__close-btn {
+      display: none;
+    }
+
+    &__close-btn--form {
+      display: block;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .modal-feedback {
+    width: 425px;
+  }
+}
+
+@media (max-width: 423px) {
+  .modal-feedback {
+    width: 375px;
+
+    &__close-btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 373px) {
+  .modal-feedback {
+    width: 320px;
+  }
+}

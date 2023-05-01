@@ -1,7 +1,15 @@
 import './index.html';
 import './index.scss';
-import { mult, sum } from './modules/calc';
+import { feedbackFunc } from './modules/feedback';
+import { sideBarFunc } from './modules/sidebar';
+import { showModalCall } from './modules/modal-call';
+import { activateLogoSlider } from './modules/slider-logo';
+import { activateProductSlider } from './modules/slider-product';
+import { activatePriceSlider } from './modules/slider__service-price';
 
-
-console.log(mult(3, 4));
-console.log(sum(3, 4));
+activateProductSlider();
+activateLogoSlider();
+activatePriceSlider();
+sideBarFunc();
+feedbackFunc();
+showModalCall();
