@@ -6,7 +6,7 @@ export const activateLogoSlider = () => {
 
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-      position = 256 * index;
+      position = 264 * index;
       sliderLine.style.left = -position + 'px';
       syncDots(index)
     })
