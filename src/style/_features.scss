@@ -25,6 +25,10 @@
       &--continued {
         display: none;
       }
+
+      &--bg {
+        display: none;
+      }
     }
 
     &__wrap {
@@ -32,6 +36,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
+      cursor: pointer;
 
       &--btn {
         border: none;
@@ -44,12 +49,16 @@
           font-weight: 600;
         }
       }
+
+      &--btn svg {
+        cursor: pointer;
+      }
     }
   }
 }
 
 .show-continued {
- display: block;
+  display: block;
 }
 
 @media (max-width: 1437px) {
@@ -97,8 +106,7 @@
 
 @media (max-width: 766px) {
   .features {
-    background-position: center bottom;
-    background-size: 100% 176px;
+    background-image: none;
     min-height: 376px;
     width: 320px;
     margin: 0 auto;
@@ -106,7 +114,7 @@
     &-text {
       width: 320px;
       padding-left: 16px;
-      max-height: 600px;
+
 
       &__title {
         display: none;
@@ -116,6 +124,13 @@
         padding-top: 0px;
         padding-right: 16px;
 
+        &--bg {
+          padding-top: 15px;
+          display: block;
+          margin: 0 auto;
+          height: 185px;
+          width: 320px;
+        }
       }
     }
   }
