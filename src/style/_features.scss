@@ -10,14 +10,17 @@
     max-width: 522px;
     padding-left: 34px;
 
+
     &__title {
       padding-top: 14px;
-      padding-left: 25px;
+      padding-left: 18px;
       color: $title-color;
     }
 
     &__desc {
       padding-top: 19px;
+      // height: 75px;
+      // overflow: hidden;
 
       &--continued {
         display: none;
@@ -43,6 +46,10 @@
       }
     }
   }
+}
+
+.show-continued {
+ display: block;
 }
 
 @media (max-width: 1437px) {
@@ -83,7 +90,6 @@
 
       &__desc {
         padding-top: 18px;
-
       }
     }
   }
@@ -93,7 +99,7 @@
   .features {
     background-position: center bottom;
     background-size: 100% 176px;
-    min-height: 385px;
+    min-height: 376px;
     width: 320px;
     margin: 0 auto;
 
@@ -109,6 +115,7 @@
       &__desc {
         padding-top: 0px;
         padding-right: 16px;
+
       }
     }
   }

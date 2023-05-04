@@ -6,7 +6,8 @@ import { showModalCall } from './modules/modal-call';
 import { activateLogoSlider } from './modules/slider-logo';
 import { activateProductSlider } from './modules/slider-product';
 import { activatePriceSlider } from './modules/slider__service-price';
-
+import { showText } from './modules/show-text-feedback';
+showText();
 activateProductSlider();
 activateLogoSlider();
 activatePriceSlider();
